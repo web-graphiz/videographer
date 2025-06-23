@@ -9,7 +9,6 @@ A stunning, modern landing page for videographers featuring a bold **yellow and 
 - **Modern Yellow & Black Theme**: Professional color palette with golden gradients
 - **Responsive Design**: Fully responsive across all devices and screen sizes
 - **Smooth Animations**: Elegant scroll animations and hover effects
-- **Glass Navigation**: Modern glassmorphism navigation bar
 - **Loading Screen**: Animated loading screen with progress bar
 - **Parallax Effects**: Subtle parallax scrolling for enhanced visual appeal
 
