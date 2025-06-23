@@ -1,6 +1,6 @@
 # 🎬 Modern Videographer Landing Page
 
-A stunning, modern landing page for videographers featuring a bold **yellow and black** color scheme. Built with pure HTML, CSS, and JavaScript for optimal performance and beautiful aesthetics.
+A stunning, modern landing page for videographers featuring a bold **yellow and black** color scheme. Built with pure HTML, CSS, and JavaScript for optimal performance and beautiful aesthetics. Perfect for showcasing video production services including editing, motion graphics, audio production, and brand strategy.
 
 ## ✨ Features
 
@@ -48,13 +48,24 @@ VideoGrapher/
 
 1. **Hero Section**: Eye-catching introduction with call-to-action buttons
 2. **About**: Personal introduction and professional background
-3. **Services**: Video editing, motion graphics, scriptwriting, and film production
-4. **Portfolio**: Filterable gallery of work samples
-5. **Testimonials**: Client reviews and feedback
-6. **Stats**: Animated statistics and achievements
+3. **Services**: Six comprehensive services including video editing, motion graphics, scriptwriting, film production, audio production, and brand video strategy
+4. **Portfolio**: Filterable gallery of work samples with 9 high-quality project images
+5. **Testimonials**: Client reviews and feedback with star ratings
+6. **Stats**: Animated statistics and achievements counter
 7. **Skills**: Technical proficiency with animated progress bars
 8. **Contact**: Call-to-action section with contact information
 9. **Footer**: Social links and copyright information
+
+## 🎯 Services Offered
+
+The template showcases six comprehensive video production services:
+
+1. **Video Editing** - Professional editing with color grading, sound design, and seamless transitions
+2. **Motion Graphics** - Eye-catching animations and dynamic visual elements
+3. **Scriptwriting** - Compelling scripts from concept to final draft
+4. **Film Production** - Complete production services from pre-production to delivery
+5. **Audio Production** - Professional audio mixing, sound design, and voiceover recording
+6. **Brand Video Strategy** - Strategic video content planning and brand storytelling
 
 ## 🎨 Color Palette
 
@@ -95,10 +106,11 @@ Update the CSS custom properties in `:root` section of `styles.css`:
 
 ### Adding Content
 
-- Replace placeholder images in the portfolio section
+- Replace placeholder images in the portfolio section (currently includes 9 professional images)
 - Update personal information in the about section
-- Modify service offerings in the services section
+- Modify service offerings in the services section (currently includes 6 services: Video Editing, Motion Graphics, Scriptwriting, Film Production, Audio Production, and Brand Video Strategy)
 - Add your own testimonials and client reviews
+- Update portfolio filter categories to match your service offerings
 
 ### Contact Information
 
@@ -122,7 +134,7 @@ Professional loading screen with camera icon animation and progress bar to enhan
 
 ### Portfolio Filter
 
-JavaScript-powered filtering system allows visitors to view projects by category (Video Editing, Motion Graphics, etc.).
+JavaScript-powered filtering system allows visitors to view projects by category (Video Editing, Motion Graphics, Scriptwriting, Film Production, and Audio Production).
 
 ### Smooth Animations
 
@@ -140,6 +152,9 @@ Touch-friendly navigation and optimized layouts for mobile devices.
 - **Film Makers**
 - **Motion Graphics Artists**
 - **Video Editors**
+- **Audio Production Specialists**
+- **Brand Strategy Consultants**
+- **Social Media Video Creators**
 
 ## 📞 Support
 
