@@ -521,8 +521,8 @@ section h2 {
 #about .container {
   background: linear-gradient(
     135deg,
-    rgba(26, 26, 26, 0.8) 0%,
-    rgba(45, 45, 45, 0.8) 100%
+    rgba(26, 26, 26, 1) 0%,
+    rgba(45, 45, 45, 0.95) 100%
   );
   border-radius: 20px;
   margin: 40px 20px;
