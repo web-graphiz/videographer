@@ -73,17 +73,81 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-
-  // Navbar scroll effect
+  // Navbar scroll effect and active navigation combined
   if (nav) {
-    window.addEventListener("scroll", () => {
+    const combinedScrollHandler = throttle(() => {
+      // Navbar background effect
       if (window.scrollY > 100) {
         nav.classList.add("scrolled");
       } else {
         nav.classList.remove("scrolled");
       }
+
+      // Update active navigation
+      updateActiveNavLink();
+    }, 50);
+
+    window.addEventListener("scroll", combinedScrollHandler);
+  }
+  // ===== ACTIVE NAVIGATION MENU =====
+  const navLinksArray = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sections = document.querySelectorAll("section[id], header");
+
+  function updateActiveNavLink() {
+    let currentSection = "";
+    const scrollPosition = window.scrollY + 150; // Offset for header height
+
+    // Check which section is currently in view
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute("id");
+
+      if (
+        sectionId &&
+        scrollPosition >= sectionTop - 200 &&
+        scrollPosition < sectionTop + sectionHeight - 200
+      ) {
+        currentSection = sectionId;
+      }
+    });
+
+    // Special case for hero section (when at the very top)
+    if (window.scrollY < 150) {
+      currentSection = "";
+    }
+
+    // Special case for the last section (CTA) - activate when near bottom
+    const lastSection = document.querySelector("#cta");
+    if (lastSection) {
+      const lastSectionTop = lastSection.offsetTop;
+      const documentHeight = document.documentElement.scrollHeight;
+      const windowHeight = window.innerHeight;
+
+      // If we're in the last 20% of the page or in the CTA section
+      if (
+        scrollPosition >= lastSectionTop - 300 ||
+        window.scrollY + windowHeight >= documentHeight - 100
+      ) {
+        currentSection = "cta";
+      }
+    }
+
+    // Update active states
+    navLinksArray.forEach((link) => {
+      link.classList.remove("active");
+      const href = link.getAttribute("href");
+
+      if (
+        href === "#" + currentSection ||
+        (currentSection === "" && href === "#")
+      ) {
+        link.classList.add("active");
+      }
     });
   }
+  // Initial call to set active link on page load
+  updateActiveNavLink();
 
   // ===== SMOOTH SCROLLING =====
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

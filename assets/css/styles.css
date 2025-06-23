@@ -237,6 +237,14 @@ header {
   width: 100%;
 }
 
+.nav-links a.active {
+  color: var(--primary-yellow);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 .nav-cta {
   background: var(--accent-gradient) !important;
   color: var(--pure-black) !important;
